@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facilities - FreshBite</title>
+  <link rel="stylesheet" href="Facilities.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<nav class="navbar fixed w-full bg-white shadow-sm z-50" id="navbar" data-aos="fade-down">
+    <div class="container-nav">
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" class="logo-image">
+        </div>
+
+        <div class="nav-links desktop-only">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="Catalogue.html" class="nav-link">Catalogue</a><!--Account-->
+          <a href="Facilities.html" class="nav-link">Facilities</a>
+          <a href="About.html" class="nav-link">About</a><!--Suppliers-->
+          <a href="Contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="salsa">
+            <img src="assets/salsa.png" alt="Logo" class="salsa-img">
+        </div>
+        <div class="halal">
+            <img src="assets/hal.png" alt="Logo" class="halal-img">
+        </div>
+
+        <button class="menu-button mobile-only" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="Catalogue.html" class="mobile-nav-link">Catalogue</a>
+      <a href="Facilities.html" class="mobile-nav-link">Facilities</a>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="Contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </nav>
+
+  
+
+  <script>
+    // Get the navbar element
+    const navbar = document.getElementById('navbar');
+
+    // Listen for the scroll event
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color change
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+  
+
+
+
+<div class="parallax-section">
+    <div class="parallax-image" style="background-image: url('assets/hh.png');">
+      <div class="parallax-content">
+        <img src="assets/tag.png" class="facility-icon" >
+      </div>
+    </div>
+  </div>
+    
+<section class="horizontal-facilities">
+  <div class="facility-strip">
+    <div class="facility-box">
+      <img src="https://img.icons8.com/ios-filled/100/000000/broom.png" alt="Cleanliness"/>
+      <h3>Spotless Clean</h3>
+      <p>Sanitised daily for your safety and comfort.</p>
+    </div>
+    <div class="facility-box">
+      <img src="https://img.icons8.com/ios-filled/100/000000/clock.png" alt="Fast Service"/>
+      <h3>Timely Service</h3>
+      <p>Punctual delivery you can count on.</p>
+    </div>
+    <div class="facility-box">
+      <img src="https://img.icons8.com/ios-filled/100/000000/vegetarian-food.png" alt="Vegan"/>
+      <h3>Vegan Friendly</h3>
+      <p>Delicious, cruelty-free options for everyone.</p>
+    </div>
+    <div class="facility-box">
+      <img src="https://img.icons8.com/ios-filled/100/000000/take-away-food.png" alt="Sustainable Packaging"/>
+      <h3>Eco-Conscious</h3>
+      <p>Sustainable packaging and practices.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Section 1: Image Left, Text Right -->
+  <div class="swection">
+    <div class="parallax-side" style="background-image: url('assets/fac.png');"></div>
+    <div class="text-side">
+      <div class="text-box">
+        <h2 class="t2">MADE WITH LOVE</h2>
+        <hr/>
+        <p class="pee">At Fresh Bite, we believe great food starts with great care. From prepping the freshest ingredients to plating every dish with intention, our kitchen is a place of passion, precision, and flavor. Dive behind the scenes and see how we craft every bite you love.</p>
+        <section class="freshbite-points">
+ <section class="freshbite-points">
+  <ul class="points-list">
+    <li>
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/ingredients.png" alt="Ingredients icon">
+      <span>Locally Sourced Ingredients</span>
+    </li>
+    <li>
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/chef-hat.png" alt="Chef icon">
+      <span>Expertly Handcrafted by Chefs</span>
+    </li>
+    <li>
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/fire-element.png" alt="Cooking icon">
+      <span>Cooked Fresh, Every Single Time</span>
+    </li>
+    <li>
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/organic-food.png" alt="Organic icon">
+      <span>No Preservatives, Ever</span>
+    </li>
+    <li>
+      <img src="https://img.icons8.com/ios-filled/50/4CAF50/take-away-food.png" alt="Sustainable packaging icon">
+      <span>Safe & Sustainable Packaging</span>
+    </li>
+  </ul>
+</section>
+        <a href="Contact.html" class="btn">Get in touch</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Text Left, Image Right -->
+  <div class="swection">
+    <div class="text-side">
+      <div class="text-box">
+        <h2 class="t22">OUR STORY</h2>
+        <hr />
+        <p class="pee">FreshBite serves bold, fresh, and sustainable<br> food — crafted with care and held to the<br> highest standard.</p>
+        <a href="About.html" class="btn">LEARN MORE</a>
+      </div>
+    </div>
+    <div class="parallax-side" style="background-image: url('assets/fac.png');"></div>
+  </div>
+
+<div class="videor">
+    <video id="myVideo" class="desktop-video" autoplay loop muted>
+        <source src="assets/vidw.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  <video id="myVideoMobile" class="mobile-video" autoplay loop muted playsinline>
+    <source src="assets/mak.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  </div>
+
+
+<script>
+    const facilityIcon = document.querySelector('.facility-icon');
+
+    window.addEventListener('scroll', function () {
+      if (facilityIcon) {
+        const iconTop = facilityIcon.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        const visibleRatio = Math.max(0, 1 - iconTop / windowHeight);
+        const scaleValue = 1 + visibleRatio;
+        facilityIcon.style.transform = `scale(${scaleValue})`;
+      }
+    });
+</script>
+
+<footer class="modern-footer">
+        <div class="footer-content">
+          <div class="footer-section brand">
+            <img src="assets/loggo1.png" alt="FreshBite Logo" class="footer-logo" />
+        
+        <div class="contact-details">
+          <a href="tel:+442084326012"></a><p><strong>Phone: </strong>+44 208 432 6012</p></a>
+          <a href="mailto:info@freshbite.org.uk" ><p><strong>Email: </strong>info@freshbite.org.uk</p></a>
+        </div></div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Catalogue.html">Catalogue</a></li>
+              <li><a href="Facilities.html">Facilities</a></li>
+
+              <li><a href="About.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+      
+         <!-- <div class="footer-section newsletter">
+            <h3>Subscribe</h3>
+            <form id="newsletter-form" action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Your email" required />
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+          </div>
+        </div>-->
+      
+        <div class="footer-bottom">
+            <p>Designed by <a href="http://jaessolutions.com">JAES Solutions</a>, UK | Email: <a href="mailto:info@jaesSolutions.com">info@jaessolutions.com</a></p>
+            <p>Copyright &copy; 2025 Fresh Bite All Rights Reserved</p>
+        </div>
+      </footer>
+    </body>
+</html>

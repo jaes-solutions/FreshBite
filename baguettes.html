@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshBite Baguettes - Gourmet Packed Sandwiches & Hot Meals</title>
+  <meta name="description" content="Explore FreshBite's full range of gourmet baguettes including Chicken Tikka, Tuna Salad, Egg Sausage, and more. Perfectly packed meals made fresh for delivery across the UK.">
+  <meta name="keywords" content="FreshBite baguettes, gourmet baguettes, packed sandwiches, hot meals, chicken tikka baguette, halal sandwiches, tuna salad baguette, ready to eat meals, baguette meal delivery, UK food supplier, packed lunch UK, sandwich catalogue, FreshBite menu">
+  <meta name="author" content="FreshBite">
+  <meta property="og:title" content="FreshBite Baguettes - Gourmet Sandwiches & Packed Meals">
+  <meta property="og:description" content="Browse our delicious baguette range including hot chicken, tuna, veggie options and more — freshly packed and delivered across the UK.">
+  <meta property="og:image" content="https://freshbite.org.uk/assets/logo.png">
+  <meta property="og:url" content="https://freshbite.org.uk/baguettes.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FreshBite Baguettes - Packed Gourmet Sandwiches UK">
+  <meta name="twitter:description" content="Discover FreshBite's curated baguette menu with chicken, egg, veggie and fish options — all freshly made and delivered.">
+  <meta name="twitter:image" content="https://freshbite.org.uk/assets/logo.png">
+  <link rel="stylesheet" href="baguettes.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar fixed w-full bg-white shadow-sm z-50" id="navbar" data-aos="fade-down">
+    <div class="container-nav">
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" class="logo-image">
+        </div>
+
+        <div class="nav-links desktop-only">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="Catalogue.html" class="nav-link">Catalogue</a><!--Account-->
+          <a href="Facilities.html" class="nav-link">Facilities</a>
+          <a href="About.html" class="nav-link">About</a><!--Suppliers-->
+          <a href="Contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="salsa">
+            <img src="assets/salsa.png" alt="Logo" class="salsa-img">
+        </div>
+        <div class="halal">
+            <img src="assets/hal.png" alt="Logo" class="halal-img">
+        </div>
+
+        <button class="menu-button mobile-only" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="Catalogue.html" class="mobile-nav-link">Catalogue</a>
+      <a href="Facilities.html" class="mobile-nav-link">Facilities</a>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="Contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </nav>
+
+
+  <script>
+    // Get the navbar element
+    const navbar = document.getElementById('navbar');
+
+    // Listen for the scroll event
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) { // Change 50 to the scroll position where you want the color change
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+<a href="javascript:history.back()" class="back-arrow">&#8592;</a>
+  <div class="header">
+    <h1>Baguettes</h1>
+  </div>
+
+  <div class="catalogue-grid">
+    <div class="catalogue-item" onclick="showDetails(this, 'BG01', '5055592704770')">
+      <img src="assets/b1.png" class="catalogue-image" alt="CHEESE SALAD (H)">
+      <div class="catalogue-title">CHEESE SALAD (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG02', '5055592704787')">
+      <img src="assets/b2.png" class="catalogue-image" alt="HAM AND CHEESE">
+      <div class="catalogue-title">HAM AND CHEESE</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG03', '5055592704794')">
+      <img src="assets/b3.png" class="catalogue-image" alt="CHICKEN SALAD (H)">
+      <div class="catalogue-title">CHICKEN SALAD (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG04', '5055592704800')">
+      <img src="assets/b5.png" class="catalogue-image" alt="TUNA SALAD (H)">
+      <div class="catalogue-title">TUNA SALAD (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG05', '5055592704817')">
+      <img src="assets/bfri.png" class="catalogue-image" alt="SOUTHERN FRIED CHICKEN (H)">
+      <div class="catalogue-title">SOUTHERN FRIED CHICKEN (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG06', '5055592704824')">
+      <img src="assets/b6.png" class="catalogue-image" alt="EGG SAUSAGE">
+      <div class="catalogue-title">EGG SAUSAGE</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG07', '5055592704831')">
+      <img src="assets/b7.png" class="catalogue-image" alt="CHICKEN SWEETCORN (H)">
+      <div class="catalogue-title">CHICKEN SWEETCORN (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG08', '5055592704848')">
+      <img src="assets/b4.png" class="catalogue-image" alt="CHICKEN CLUB">
+      <div class="catalogue-title">CHICKEN CLUB</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG09', '5055592704855')">
+      <img src="assets/b8.png" class="catalogue-image" alt="NEW YORK CLUB">
+      <div class="catalogue-title">NEW YORK CLUB</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG10', '5055592704862')">
+      <img src="assets/b9.png" class="catalogue-image" alt="CHICKEN CHORIZO">
+      <div class="catalogue-title">CHICKEN CHORIZO</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG11', '5055592704879')">
+      <img src="assets/humfal.jpg" class="catalogue-image" alt="HUMMUS & FALAFEL BAGUETTE (H)">
+      <div class="catalogue-title">HUMMUS & FALAFEL BAGUETTE (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG12', '5055592704886')">
+      <img src="assets/chicken tikks.jpg" class="catalogue-image" alt="CHICKEN TIKKA (H)">
+      <div class="catalogue-title">CHICKEN TIKKA (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG13', '5055592704893')">
+      <img src="assets/chicor.jpg" class="catalogue-image" alt="CHICKEN CORONATION (H)">
+      <div class="catalogue-title">CHICKEN CORONATION (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG14', '5055592704909')">
+      <img src="assets/bbbrie.png" class="catalogue-image" alt="BRIE & CRANBERRY (H)">
+      <div class="catalogue-title">BRIE & CRANBERRY (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+    <div class="catalogue-item" onclick="showDetails(this, 'BG16', '5055592704916')">
+      <img src="assets/b5.png" class="catalogue-image" alt="TUNA CLUB (H)">
+      <div class="catalogue-title">TUNA CLUB (H)</div>
+      <div class="product-info hidden">
+        <h4>Product Code: <span class="product-code"></span></h4>
+        <h4>Barcode: <span class="product-barcode"></span></h4>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showDetails(element, code, barcode) {
+      // Collapse all other items
+      document.querySelectorAll('.catalogue-item').forEach(item => {
+        if (item !== element) {
+          item.classList.remove('expanded');
+          item.querySelector('.product-info').classList.add('hidden');
+        }
+      });
+
+      const infoBox = element.querySelector('.product-info');
+      const isExpanded = element.classList.contains('expanded');
+
+      if (isExpanded) {
+        element.classList.remove('expanded');
+        infoBox.classList.add('hidden');
+      } else {
+        element.classList.add('expanded');
+        infoBox.querySelector('.product-code').textContent = code;
+        infoBox.querySelector('.product-barcode').textContent = barcode;
+        infoBox.classList.remove('hidden');
+      }
+    }
+  </script>
+ <footer class="modern-footer">
+        <div class="footer-content">
+          <div class="footer-section brand">
+            <img src="assets/loggo1.png" alt="FreshBite Logo" class="footer-logo" />
+        
+        <div class="contact-details">
+          <a href="tel:+442084326012"></a><p><strong>Phone: </strong>+44 208 432 6012</p></a>
+          <a href="mailto:info@freshbite.org.uk" ><p><strong>Email: </strong>info@freshbite.org.uk</p></a>
+        </div></div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Catalogue.html">Catalogue</a></li>
+              <li><a href="Facilities.html">Facilities</a></li>
+
+              <li><a href="About.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+      
+         <!-- <div class="footer-section newsletter">
+            <h3>Subscribe</h3>
+            <form id="newsletter-form" action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Your email" required />
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+          </div>
+        </div>-->
+      
+        <div class="footer-bottom">
+            <p>Designed by <a href="http://jaessolutions.com">JAES Solutions</a>, UK | Email: <a href="mailto:info@jaesSolutions.com">info@jaessolutions.com</a></p>
+            <p>Copyright &copy; 2025 Fresh Bite All Rights Reserved</p>
+        </div>
+      </footer>
+    </body>
+</html>
